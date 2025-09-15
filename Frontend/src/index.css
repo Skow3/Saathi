@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.breathing-circle {
+  animation: breathe 8s ease-in-out infinite;
+}
+
+/* Keyframes for the breathing animation */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for the soft pulse animation */
+@keyframes soft-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* Custom class to apply the breathe animation */
+.breathing-circle {
+  animation: breathe 8s ease-in-out infinite;
+}
+
+/* Custom class to apply the soft-pulse animation */
+.soft-pulse-button {
+  animation: soft-pulse 3s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+
+/* Replace the old 'float' keyframes with this new one */
+@keyframes float-thought {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-150px) scale(1.2);
+  }
+}
+
+.thought-cloud {
+  /* Use the new animation */
+  animation: float-thought linear infinite;
+}
